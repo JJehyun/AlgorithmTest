@@ -141,6 +141,42 @@
 # a = int(input())
 # print(a*2)
 
-print("6047번")
-a,b = input().split()
-print(int(a)<<int(b))
+# print("6047번")
+# a,b = input().split()
+# print(int(a)<<int(b))
+
+# print("6048번")
+# a,b = input().split()
+# if int(a)<int(b):
+#     print(True)
+# else:
+#     print(False)
+
+# print("6049번")
+# a,b = input().split()
+# if int(a) == int(b):
+#     print(True)
+# else:
+#     print(False)
+
+# print("6050번")
+# a,b = input().split()
+# if int(b)>=int(a):
+#     print(True)
+# else:
+#     print(False)
+
+# print("6051번")
+# a,b = input().split()
+# if(int(a)!=int(b)):
+#     print(True)
+# else:
+#     print(False)
+
+# print("6052번")
+# a = input()
+# print(bool(int(a)))
+
+# print("6053번")
+# a = input()
+# print(not bool(int(a)))
