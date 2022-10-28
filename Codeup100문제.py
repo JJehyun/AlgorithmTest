@@ -180,3 +180,195 @@
 # print("6053번")
 # a = input()
 # print(not bool(int(a)))
+
+
+# print("6054번")
+# a,b = input().split()
+# print(bool(int(a)) and bool(int(b)))
+
+# print("6055번")
+# a,b = input().split()
+# print(bool(int(a)) or bool(int(b)))
+
+# print("6056번")
+# a,b = input().split()
+# if bool(int(a)) != bool(int(b)):
+#     print(True)
+# else:
+#     print(False)
+
+# print("6057번")
+# a,b = input().split()
+# if bool(int(a)) == bool(int(b)):
+#     print(True)
+# else:
+#     print(False)
+
+# print("6058번")
+# a, b = input().split()
+# c = bool(int(a))
+# d = bool(int(b))
+# print(not(c or d))
+
+# print("6059번")
+# a=int(input())
+# print(~a)
+
+# print("6060번")      - 비트 단위 연산 and = &
+# a,b = input().split()
+# print(int(a) & int(b))
+
+# print("6061번")
+# a,b = input().split()
+# print(int(a) | int(b))
+
+# print("6062번")
+# a,b = input().split()
+# print(int(a) ^ int(b))
+
+# print("6063번")        -  파이썬 삼항 연산자
+# a,b = input().split()
+# c = int(a) if int(a)>int(b) else int(b)
+# print(c)
+
+# print("6064번")
+# a,b,c = map(int,input().split())
+# print((a if (a<b) else b)if ((a if (a<b) else b)<c) else c)
+
+# print("6065번")
+# a,b,c = map(int,input().split())
+# if a%2==0:
+#     print(a)
+# if b%2==0:
+#     print(b)
+# if c%2==0:
+#     print(c)
+
+# print("6066번")
+# a,b,c = map(int,input().split())
+# if a%2==0:
+#     print("even")
+# else:
+#     print("odd")
+# if b%2==0:
+#     print("even")
+# else:
+#     print("odd")
+# if c%2==0:
+#     print("even")
+# else:
+#     print("odd")
+
+# print("6067번")
+# a = int(input())
+# if a<0:
+#     if a%2==0:
+#         print('A')
+#     else : print('B')
+# else:
+#     if a%2==0:
+#         print('C')
+#     else : print('D')
+
+# print("6068번")
+# a = int(input())
+# if a>=90:
+#     print("A")
+# elif a>=70:
+#     print("B")
+# elif a>=40:
+#     print("C")
+# else:
+#     print("D")
+
+# print("6069번")
+# a = input()
+# if a=="A":
+#     print("best!!!")
+# elif a=="B":
+#     print("good!!")
+# elif a=="C":
+#     print("run!")
+# elif a=="D":
+#     print("slowly~")
+# else:
+#     print("what?")
+
+# print("6070번")
+# month = int(input())
+# if month//3==1:
+#     print('spring')
+# elif (month-3)//3==1:
+#     print('summer')
+# elif (month-6)//3==1:
+#     print('fall')
+# else : print('winter')
+
+# print("6071번")
+# a = 1
+# while a !=0:
+#     b = int(input())
+#     if b==0:
+#         a = 0 
+#         break
+#     print(b)
+
+# print("6073번")
+# a = int(input())
+# while a != 0:
+#     print(a)
+#     a = a - 1
+
+# print("6074번")
+# a = int(input())
+# while a != 0:
+#     a = a - 1
+#     print(a)
+
+# print("6075번")
+# a = ord(input())
+# t = ord('a')
+# while t <= a:
+#     print(chr(t),end=" ")
+#     t = t + 1
+
+# print("6075번")
+# a = int(input())
+# num = 0
+# while num <= a:
+#     print(num)
+#     num = num + 1
+
+# print("6076번")
+# a = int(input())
+# for i in range(a+1):
+#     print(i)
+
+
+# print("6077번")
+# a = int(input())
+# s = 0
+# for i in range(1,a+1):
+#     if i%2 == 0:
+#         s += i
+
+# print(s)
+
+# print("6078번")
+# a = 1
+# while a == 1:
+#     b = input()
+#     print(b)
+#     if b == "q":
+#         a = 2
+#         break
+
+# print("6079번")
+# x = int(input())
+# result = 0
+
+# for i in range(1, x+1):
+#   result += i
+#   if result >= x :
+#     print(i)
+#     break
