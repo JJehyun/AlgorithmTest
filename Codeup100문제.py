@@ -372,3 +372,42 @@
 #   if result >= x :
 #     print(i)
 #     break
+
+# print("6080번")
+# a,b = input().split()
+# for i in range(1,int(a)+1):
+#     for j in range(1,int(b)+1):
+#         print(i,j)
+
+# print("6081번")
+# a = int(input(),16)
+# for i in range(1,16):
+#     print('%X*%X=%X' %(a,i,a*i))
+
+# print("6083번")
+# count = 0
+# a,b,c = map(int,input().split())
+# for i in range(0,a):
+#     for j in range(0,b):
+#         for k in range(0,c):
+#             print(i , j , k)
+#             count +=1
+
+# print(count)
+
+# print("6084번")
+# h,b,c,s = map(int,input().split())
+# m = (h* b * c * s)/8/1024/1024
+# print('%.1f MB' %m)
+
+# print("6085번")
+# w, h, b = map(int,input().split())
+# print("%.2f MB" %(round(w*h*b/8/1024/1024,2)))
+
+# print("6086번")
+# a = int(input())
+# count = 0
+# while count < a :
+#     count +=1
+#     count += count
+# print(count)
