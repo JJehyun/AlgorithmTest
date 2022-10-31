@@ -411,3 +411,19 @@
 #     count +=1
 #     count += count
 # print(count)
+
+
+
+# print("-----------------------------------------------------------------------------------")
+# print("1402문제")    --순서대로 들어오는 배열 반대로 출력하기- 스택문제!!
+# a = int(input())
+# b = list(map(int,input().split()))
+# b.reverse()
+# for i in b:
+#     print(i , end=" ")
+
+# print("1714문제")    --입력된 숫자열 반대로 출력하기 -- 스택문제!!
+# a = list(map(int,input()))
+# a.reverse()
+# for i in a:
+#     print(i,end="")
