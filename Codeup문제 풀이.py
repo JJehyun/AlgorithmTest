@@ -428,14 +428,23 @@
 # for i in a:
 #     print(i,end="")
 
-print("2001번")
-pasta=[]
-for i in range(3):
-    pasta.append(float(input()))
+# print("2001번")       --그리디 문제!!
+# pasta=[]
+# for i in range(3):
+#     pasta.append(float(input()))
 
-juice=[]
-for i in range(2):
-    juice.append(float(input()))
+# juice=[]
+# for i in range(2):
+#     juice.append(float(input()))
 
-result = (min(pasta)+min(juice))*1.1
-print(format(result,".1f"))
+# result = (min(pasta)+min(juice))*1.1
+# print(format(result,".1f"))
+
+# print("3301번")         -- / 나누기 , % 나머지 , // 몫 그리디 문제
+# a = int(input())
+# num = 0
+# array = [50000,10000,5000,1000,500,100,50,10]
+# for i in array:
+#     num += a//i
+#     a = a % i
+# print(num)
