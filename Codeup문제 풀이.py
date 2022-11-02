@@ -427,3 +427,15 @@
 # a.reverse()
 # for i in a:
 #     print(i,end="")
+
+print("2001번")
+pasta=[]
+for i in range(3):
+    pasta.append(float(input()))
+
+juice=[]
+for i in range(2):
+    juice.append(float(input()))
+
+result = (min(pasta)+min(juice))*1.1
+print(format(result,".1f"))
