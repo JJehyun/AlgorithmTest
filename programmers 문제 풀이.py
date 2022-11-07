@@ -110,3 +110,26 @@
 #     answer = num_list
 #     answer.reverse()
 #     return answer
+
+# print("아이스 아메리카노")
+# def solution(money):
+#     cnt= money // 5500
+#     change = money % 5500
+#     answer = []
+#     answer.append(cnt)
+#     answer.append(change)
+#     return answer
+
+# print("배열 자르기")
+# def solution(numbers, num1, num2):
+#     answer = []
+#     for i in range(num1,num2+1):
+#         answer.append(numbers[i])
+#     return answer
+
+# print("피자 나누어 먹기")
+# def solution(slice, n):
+#     if (n / slice).is_integer() :
+#         return n // slice
+#     else :
+#         return n // slice + 1
