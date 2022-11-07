@@ -133,3 +133,73 @@
 #         return n // slice
 #     else :
 #         return n // slice + 1
+
+# print("문자열 뒤집기")
+# def solution(my_string):
+#     answer = ''
+#     for i in my_string : 
+#         answer = i + answer
+#     return answer
+
+# print("배열 두배 만들기")
+# def solution(numbers):
+#     answer = []
+#     for i in range(len(numbers)) : 
+#         answer.append(numbers[i] * 2)
+#     return answer
+
+# print("배열 원소의 길이")
+# def solution(strlist):
+#     answer = []
+#     for i in strlist:
+#         answer.append(len(i))
+#     return answer
+
+# print("최대값 만들기")
+# def solution(numbers):
+#     x = max(numbers)
+#     numbers.remove(x)
+#     y = max(numbers)
+#     answer = x * y
+#     return answer
+# def solution(numbers):
+#     numbers.sort()
+#     return numbers[-2] * numbers[-1]
+
+# print("옷 가게 할인 받기")
+# def solution(price):
+#     answer = 0
+#     if price >= 500000:
+#         answer = price * 0.8
+#     elif price >= 300000:
+#         answer = price * 0.9
+#     elif price >= 100000:
+#         answer = price * 0.95
+#     else :
+#         answer = price
+
+#     return int(answer)
+
+# print("짝수는 싫어요")
+# def solution(n):
+#     answer = []
+#     for i in range(n+1) : 
+#         if( i % 2 == 1) : 
+#             answer.append(i)
+#     return answer
+
+# print("문자열안에 문자열")
+# def solution(str1, str2):
+#     if str2 in str1 : 
+#         answer = 1
+#     else : 
+#         answer = 2 
+#     return answer
+
+# print("제곱근 판별하기")
+# def solution(n):    
+#     a = n ** 0.5
+#     if int(a) == a:
+#         return 1
+#     else:
+#         return 2
