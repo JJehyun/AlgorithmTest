@@ -115,17 +115,85 @@
 //     return first + two + three
 // }
 
-console.log("문자열 정렬하기")
-function solution(my_string) {
-    var arr = [...my_string]
-    var arr2 = []
-    var answer = [];
-    arr.forEach((element,index)=>{
-        if(Number(element)){
-            arr2.push(parseInt(element))
-        }
-    })
-    answer = arr2.sort()
-    console.log(answer)
-}
-solution("abcde0")
+// console.log("문자열 정렬하기")
+// function solution(my_string) {
+//     var arr = [...my_string]
+//     var arr2 = []
+//     var answer = [];
+//     arr.forEach((element,index)=>{
+//         if(parseInt(element) || 0){
+//             arr2.push(parseInt(element))
+//         }
+//     })
+//     answer = arr2.sort()
+//     console.log(answer)
+// }
+// function solution(my_string) {
+//     return my_string
+//       .match(/[0-9]/g)
+//       .map(str => +str)
+//       .sort((a, b) => a - b);
+//   }
+
+// console.log("중앙값 구하기")
+// function solution(array) {
+//     var arr = array.sort()
+//     var length = arr.length
+//     var ab = (length - 1) / 2
+//     console.log(arr)
+//     var answer = 0;
+//     answer = arr[ab]
+//     console.log(answer)
+//     return answer;
+// }
+// function solution(array) {
+//     var answer = 0;
+//     array = array.sort(function(a,b){return b-a;});
+//     return array[parseInt(array.length/2)];
+// }
+// console.log("가위 바위 보")
+// function solution(rsp) {
+//     let rsps = rsp.split('')
+//     var answer = [];
+//     var num = 0;
+//     rsps.forEach((element,index,array)=>{
+//         if(parseInt(element) == 2){
+//             num = 0
+//             answer.push(num)
+//         }else if(parseInt(element) == 0){
+//             num = 5
+//             answer.push(num)
+//         }else{
+//             num = 2
+//             answer.push(num)
+//         }
+//     })
+//     return (answer.join(''))}    
+
+// console.log("약수 구하기")
+// function solution(n) {
+//     var answer = []
+//     for(i=1;i<=n;i++){
+//         if(n%i == 0){
+//             answer.push(i)
+//         }
+//     }
+//     console.log(answer)
+//     return answer;
+// }
+
+// console.log("n의 배수 구하기")
+// function solution(n, numlist) {
+//     var answer = []
+//     numlist.forEach((element,index,array)=>{
+//         if(element%n == 0){
+//             answer.push(element)
+//         }
+//     })
+//     return answer;
+// }
+
+// console.log("대문자와 소문자")
+// function solution(my_string) {
+//     return [...my_string].map(char => (char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase())).join('');
+//   }
