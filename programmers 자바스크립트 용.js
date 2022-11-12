@@ -197,3 +197,15 @@
 // function solution(my_string) {
 //     return [...my_string].map(char => (char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase())).join('');
 //   }
+
+// console.log("인덱스 바꾸기")
+// function solution(my_string, num1, num2) {
+//     var answer =my_string;
+//     var work = [...answer]
+//     var s = work[num1]
+//     work[num1] = work[num2]
+//     work[num2] = s
+//     console.log(work.join(''))
+//     return work.join('');
+// }
+// solution("hello",1,2)
