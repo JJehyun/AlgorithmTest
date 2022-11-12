@@ -18,7 +18,9 @@
 // ,initialValue(accumulator어디서부터 더 할지))
 
 
+//배열.findindex(element, index, array => element === 3) 원하는 요소를 찾으면 메서드 종료
 
+//includes , indexof
 
 //--------------------------------------------------------------------------------------------------------
 
@@ -209,3 +211,39 @@
 //     return work.join('');
 // }
 // solution("hello",1,2)
+
+// console.log("숫자 찾기")
+// function solution(num, k) {
+//     const index = [...('' + num)].findIndex((n) => {return +n === k});
+//     console.log(index)
+//     return index === -1 ? -1 : index + 1;
+//   }
+//   solution("12345" , 4)
+//   function solution(num, k) {
+//     var answer = num.toString()
+//     if (answer.includes(k)) {
+//         return answer.indexOf(k) + 1;
+//     } else {
+//         return -1;
+//     }
+// }
+
+// console.log("외계 행성의 나이")
+// function solution(age) {
+//     var word = [..."abcdefghijklmnopqrstuvwxyz"]
+//     var num = String(age).split('')
+//     var arr = []
+//     num.map((element , index , array)=>{
+//        arr.push(word[Number(element)])
+//     })
+//     console.log(arr.join(''))
+//     return arr
+// }
+
+// console.log("최댓값 만들기")
+// function solution(numbers) {
+//     const sort = numbers.sort((a,b) => a-b)
+//     console.log(Math.max(sort[0] * sort[1] , sort[sort.length-1] * sort[sort.length-2]))
+//     return Math.max(sort[0] * sort[1] , sort[sort.length-1] * sort[sort.length-2])
+// }
+// solution([1,2,3,4,5])
