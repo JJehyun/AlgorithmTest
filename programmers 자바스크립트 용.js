@@ -20,7 +20,9 @@
 
 //배열.findindex(element, index, array => element === 3) 원하는 요소를 찾으면 메서드 종료
 
-//includes , indexof
+//  배열.includes() --> 포함 되면 true 아니면 false 
+// , indexof
+//  배열.splice(몇번째 , 몇번째~1번째까지 삭제)
 
 //--------------------------------------------------------------------------------------------------------
 
@@ -247,3 +249,10 @@
 //     return Math.max(sort[0] * sort[1] , sort[sort.length-1] * sort[sort.length-2])
 // }
 // solution([1,2,3,4,5])
+
+console.log("한번만 등장한 문자!")
+function solution(s) {
+    const m = new Map();
+    [...s].forEach(e=>m.set(e, m.get(e)+1||1));
+    return [...m].filter(e=>e[1]===1).map(e=>e[0]).sort().join("");
+}
