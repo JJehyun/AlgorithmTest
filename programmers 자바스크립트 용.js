@@ -1,12 +1,12 @@
 // arr.map(function(element, index, array){    --map--
 // 	console.log(this) // 80
-// }, 80);
+// }, 80); --------------------->맞는 값 ture, 맞지 않는 값 false
 
 // numbers.filter((number, index, source) => {
 //      element: 요소값
 //      index: source에서 요소의 index
 //      source: 순회하는 대상
-// });
+// });  -------------> filter에 맞는 값만 return
 
 // 배열.forEach((currentElement, index, array) => {
 //     currentElement
@@ -23,6 +23,7 @@
 //  배열.includes() --> 포함 되면 true 아니면 false 
 // , indexof
 //  배열.splice(몇번째 , 몇번째~1번째까지 삭제)
+// 문자열.split(separator="이거 기준으로 배열만듦")
 
 //--------------------------------------------------------------------------------------------------------
 
@@ -250,9 +251,51 @@
 // }
 // solution([1,2,3,4,5])
 
-console.log("한번만 등장한 문자!")
-function solution(s) {
-    const m = new Map();
-    [...s].forEach(e=>m.set(e, m.get(e)+1||1));
-    return [...m].filter(e=>e[1]===1).map(e=>e[0]).sort().join("");
-}
+// console.log("한번만 등장한 문자!")
+// function solution(s) {
+//     const m = new Map();
+//     [...s].forEach(e=>m.set(e, m.get(e)+1||1));
+//     return [...m].filter(e=>e[1]===1).map(e=>e[0]).sort().join("");
+// }
+
+// console.log("7의 개수")
+// function solution(array) {
+//     var arr = [...array.join('')]
+//     var length = arr.filter(element=> element === '7' )
+//     console.log(length)
+//     console.log(length.length)
+//     return length.length
+//     // return answer;
+// }
+// solution([7, 77, 17])
+
+// console.log("가까운 수")
+// function solution(array, n) {
+//     const minDiff = Math.min(...array.map(a => Math.abs(a - n)));
+//     return array.sort((a, b) => a - b).find(a => Math.abs(a - n) === minDiff);
+//   }
+// solution([3,10,28],20)
+
+// console.log("K의 개수")
+// function solution(i, j, k) {
+//     var num = 0 ;
+//     for(q=i;q<=j;q++){
+//        answer = [...('' + q)].filter(element => element === String(k))
+//        num = answer.length + num
+//     }
+//     console.log(num)
+//     return answer;
+// }
+// solution(1,13,1)
+
+// console.log("A로 B 만들기")
+// function solution(before, after) {
+//     var arr1 = [...before]
+//     var arr2 = [...after]
+//     if(arr1.sort().join("") === arr2.sort().join("")){
+//         answer = 1
+//     }else{
+//         answer = 0
+//     }
+//     }
+//     return answer
