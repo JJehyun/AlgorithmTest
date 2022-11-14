@@ -336,3 +336,37 @@
 //     return answer;
 // }
 // solution([2,4,8])
+
+
+// console.log("최빈값 구하기")
+// function solution(array) {
+//     var answer = 0;
+//     const arr = new Array(2001).fill(0);
+//     array.forEach(v=>arr[v+1000]+=1);
+//     const max = Math.max(...arr);
+//     const startIndex = arr.indexOf(max);
+//     const lastIndex = arr.lastIndexOf(max);
+//     return startIndex!==lastIndex?-1:startIndex-1000
+// }
+
+console.log("중복된 문자 제거")
+function solution(my_string) {
+    var answer = my_string.split("")
+    var l2 = []
+    answer.map((element,index,array)=>{
+        var arr = array
+        arr.splice(index,1)
+        console.log(arr)
+        if(arr.includes(element)){
+            arr.forEach((ment, ind )=>{
+                if(element == ment){
+                    arr.splice(ind,1)
+                }
+                l2 = arr
+            })
+        }
+    })
+    console.log(l2)
+    return l2;
+}
+solution("people")
