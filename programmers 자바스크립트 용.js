@@ -25,6 +25,10 @@
 //  배열.splice(몇번째 , 몇번째~1번째까지 삭제)
 // 문자열.split(separator="이거 기준으로 배열만듦")
 
+//toUpperCase() - 대문자  toLowerCase() - 소문자
+//배열slice(잘라내기 시작할 index, 잘라내길 끝낼 index)
+// var result1 = str.substr(0, 2);
+// 결과 : "자바"
 //--------------------------------------------------------------------------------------------------------
 
 
@@ -300,4 +304,15 @@
 //     }
 //     return answer
 
-console.log("문자열 정렬하기(2)")
+// console.log("문자열 정렬하기(2)")
+// function solution(my_string) {
+//     var answer = my_string.toLowerCase()
+//     return answer.split("").sort().join("")
+// }
+
+console.log("잘라서 배열로 저장하기")
+function solution(my_str, n) {
+    let res = [];
+    for (let i = 0; i < my_str.length; i+=n) res.push(my_str.slice(i, i+n));
+    return res;
+}
