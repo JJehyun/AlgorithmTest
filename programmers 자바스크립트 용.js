@@ -29,6 +29,8 @@
 //배열slice(잘라내기 시작할 index, 잘라내길 끝낼 index)
 // var result1 = str.substr(0, 2);
 // 결과 : "자바"
+
+//숫자형---[...(배열+'')] 문자형--- 문자형.split('')
 //--------------------------------------------------------------------------------------------------------
 
 
@@ -349,24 +351,44 @@
 //     return startIndex!==lastIndex?-1:startIndex-1000
 // }
 
-console.log("중복된 문자 제거")
-function solution(my_string) {
-    var answer = my_string.split("")
-    var l2 = []
-    answer.map((element,index,array)=>{
-        var arr = array
-        arr.splice(index,1)
-        console.log(arr)
-        if(arr.includes(element)){
-            arr.forEach((ment, ind )=>{
-                if(element == ment){
-                    arr.splice(ind,1)
-                }
-                l2 = arr
-            })
-        }
-    })
-    console.log(l2)
-    return l2;
-}
-solution("people")
+// console.log("중복된 문자 제거")
+// function solution(my_string) {
+//     var answer = my_string.split("")
+//     var l2 = []
+//     answer.map((element,index,array)=>{
+//         var arr = array
+//         arr.splice(index,1)
+//         console.log(arr)
+//         if(arr.includes(element)){
+//             arr.forEach((ment, ind )=>{
+//                 if(element == ment){
+//                     arr.splice(ind,1)
+//                 }
+//                 l2 = arr
+//             })
+//         }
+//     })
+//     console.log(l2)
+//     return l2;
+// }
+// solution("people")
+
+//console.log("피자 나누어 먹기(2)")
+// function solution(n) {
+//     var i = 6;
+//     while(i/n == 6){
+//         i += 6
+//         console.log(i)
+//     }
+//     var answer = 0;
+//     console.log()
+//     return answer;
+// }
+// solution(10)
+
+//console.log("369게임")
+// function solution(order) {
+//     var arr = [...('' + order)]
+//     var arr2 = arr.filter(element=> element === '3' || element === '6' || element === '9')
+//     return arr2.length;
+// }
