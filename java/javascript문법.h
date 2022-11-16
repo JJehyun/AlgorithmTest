@@ -116,16 +116,16 @@
 * ? 
 * ? 
 * ? 
-*  TODO : apply 함수
+*  TODO Construtor(Object 생성 기계~!) 문법    함수는  prototype(부모의 유전자)이라는 유전자를 가진다.
+** fun(){this.name = '김'; this.age=20; 하이 = function(){}}                   ------>object 찍어내는 공장
+** var 사람 = new fun();                                  ------>object 찍어내는 방법 new를 붙이면 됨!!
 ** 
 ** 
-** 
-** 
-** 
-** 
-** 
-** 
-** 
+** prototype은 유전자 -> 모든 prototype에 값을 추가하면 모든 자식들이 물려받을 수 있다.
+** fun(a){this.name = a;}                                 ------>object틀
+** fun.prototype.학년 = 4                                 ------>object틀에 유전자 등록(함수 등록)
+** var 하나 = new fun(김)                                 ------>object 찍어냄
+** 하나.학년 ===>4                                        ------>유전자에 있는 함수 실행!!
 ** 
 ** 
 ** 
