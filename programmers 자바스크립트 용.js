@@ -392,3 +392,24 @@
 //     var arr2 = arr.filter(element=> element === '3' || element === '6' || element === '9')
 //     return arr2.length;
 // }
+
+// console.log("짝수와 홀수 Lv1" )
+// function solution(num) {
+//     var answer = ""
+//     if(num % 2 ==0){
+//         answer = "Even"
+//     }else{
+//         answer = "Odd"
+//     }
+//     return answer;
+// }
+// solution(22)
+
+// console.log("평균 구하기 Lv1")
+// function solution(arr) {
+//     var answer = 0;
+//     arr.forEach((element) => {answer += element})
+//     var answer = answer / arr.length
+//     return answer
+// }
+// solution([1,2,3])
