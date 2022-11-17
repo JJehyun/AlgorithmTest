@@ -56,8 +56,8 @@
 * ? 
 * ? 
 * ? 
-* TODO ==> 변수 관련 var / let / const  (선언,할당,범위)
-** 자바스크립트는 맨위에 변수 선언 부터함(호이스팅)
+* TODO ==> 변수 관련 var / let / const  (선언,할당,범위) , 자료형
+**           ***자바스크립트는 맨위에 변수 선언 부터함(호이스팅)***
 ** var -> 재선언O, 재할당 O
 ** ex)  var age = 20
 **      var age = 20 --> var만 재선언이 가능O , let,const는 불가능X
@@ -74,12 +74,39 @@
 ** ex) const age = [나이 : 20]
 **            age.나이 = 30 ----> OOO 배열안의 값을 변경했으므로 OOO가능, 재할당이 아님! 사용가능!
 ** 
-** literals 
+** 
+**          ***array destructiong*** 변수에 값을 넣는 희안한 방법!
+** var [a,b,c = 10] = [2,3];                            ---->a=2 / b=3 / c=10 변수에 할당됨
+** var {name , age} = {name : 'kim', age : 30}          ---->name = 'kim' / age = 30 변수에 할당됨
+** 
+** 
+**           ***literals**** 
 ** --> `문자문자문자${변수}`
 ** 
 ** 전역변수 만들기
 ** (1) let 전역 = 0     ||    (2) window.전역 = 0
 ** 
+** 
+**          ***object key값과 value값이 같을때 객체 생성하기***
+** var name = "kim" / var age = 30
+** var obj ={name : name , age : age}  or  var obj = {name , age}  ---> 둘 다 같은 말임
+** 
+** 
+** 
+** Map자료형 , Set자료형 자료간의 의존성을 너터내고 싶을 때 가끔 사용하는 자료형이다.
+**      &&&Map 자료형&&&
+**      var person = new Map();                                    ---->map 자료형 선언하기
+**      person.set('name', 'kim')                                  ---->set으로 자료 추가    person = {'name' => 'kim'}로 저장됨
+**      person.ser('age', 20)                                      ---->set으로 자료 추가    person = {'age' => 20}로 저장됨
+** 
+**      person.get('age')                                          ---->get으로 자료 출력    //20
+**      
+**      
+**         *****set 자료형 중복을 허용하지 않는 array****
+**      var 출석부 = new Set (['A', 'A' , 'C' , 'D'])              -----> SET은 중복을 허용하지 않아서 [A,C,D]가 저장된다.
+**      출석부.ADD('값 추가 하기')
+**      출석브.delete('값 제거 하기')
+**      출석부.size                                                ----->array의 길이
 ** 
 ** 
 * TODO ...spread operator ---> [] 대괄호를 없애주는 것 . {} 중괄호도 없애줌 
@@ -128,35 +155,110 @@
 ** 하나.학년 ===>4                                        ------>유전자에 있는 함수 실행!!
 ** 
 ** 
+* TODO ?? .? optional chaning 자바스크립트 최신 문법
+** 
+** console.log(----?.())                                 ----->  ----값이 있으면 .뒤의 내용을 실행 시킴
+** console.log( undefined || null ?? "로딩 중"  )            ---->   ??앞에 undefined 나 null 이 들어오면 ??뒤의 문자를 실행한다.
 ** 
 ** 
+* TODO : ES6 상속 기능 추가 Class
+* ? Class 부모{                                                 ---->!!!!!ES6 객체 뽑는 기계!!!!!!!!
+* ?  constructor(파라미터){
+* ?         this.name = 'kim'
+* ?         this.sayHi = function(){console.log}
+* ?       }
+* ?     함수(){}                                               ----->여기다가 함수를 추가하면 prototype에 추가가 된다.(부모.prototype에 추가됨)
+* ? }
+* ? 
+* ? var 자식 = new 부모(파라미터);                              ----->!!!!!!!!자식이라는 객체 뽑음!!!!!!!!!!
+* ? 
+* TODO : ES6 상속 super, extends
+* ? 
+* ? Class 할아버지 {                                            -----> 객체 뽑는 기계
+* ?     constructor(name){
+* ?     this.성 = 'kim'
+* ?     this.이름 = name}
+* ?     함수(){}                                               ------> prototype에 함수 추가 하기
+* ? }
+* ? 
+* ? Class 아버지 extends 할아버지 {
+* ?     constructor(name){}
+* ?     super(name)                                             -----> super의 의미 === constructor(name){this.성="kim" this.이름=name} 아래내용을 그대로 가져오는 것
+* ?     this.나이 = 50;
+* ? }
+* ? 
+* ? var 아버지1 = new 아버지("이름")
+* ? 
+* TODO : getter setter 객체에 있는 함수를 이용해서 객체 내 변수를 수정하기1
+** var person ={
+**  name : "김",
+**  age : 30 ,
+**  
+**  get 가져오기함수(){ return this.age + 1 }                  ------>get 키워드를 사용하면 변수 처럼 사용이 가능하다.(return이 꼭 있어야 함!)
+**  set 넣기 함수(나이){this.age = perseInt}                   ------>set 키워드를 사용하면 변수 처럼 사용이 가능하다.(파라미터를 꼭 있어야 함!)
+** } 
+** 
+** 사람.가져오기함수;                                          ------> 함수라서 () 붙여야하지만 get 키워드를 함수 앞에 붙여줬기 때문에 () 안붙여도 됨
+** 사람.널기 함수 = 20                                         ------>함수 라서 [사람.넣기(20)] 사용 해야 하지만 변수 처럼 사람.넣기 = 20로 사용 가능
 ** 
 ** 
+**
+*  TODO import , export
+* ?  import 가져올거(작명 가능) from 경로
+* ?  export default 보낼 거                                    -----> export default 파일당 한개!
+* ? 
+* ?  여러개를 보내고싶을 때
+* ?  export var {a} , export var {b} , ....                   ------> 보낼 때는 {} 넣어서!
+* ?  import {a as 별명 ,b(이름을 정확히) as 별명)} from 경로                     
+* ? 
+* ? 
+*  TODO Promise 관련!! 비동기 관련 
+** var 프로미스 = new Promise();                                    ------> !!!!promise는 성공, 실패 판정 기계이다!!!!
+** 프로미스.then(function(){1번째 실행}).then(function(){1번째 실행 후 2번째 실행}).then({function(){2번째 실행 후 3번째 실행}})....>
 ** 
+**  ***Promise 관련 예제***
+**  var 변수 = new Promise(function(AA , BB){ 
+**      AA();  }) 
 ** 
+**  변수.then(function(){ promise에서 AA()이 실행 됐을 때}).catch(function(){ Promise에서 BB()가 실행 됐을 때!!})
+**
+**  ***최근 방법 async , await ***
+**  async 함수1(){console.log("하이")}                                               -----> promise를 return함 -> then를 사용가능!! var 변수 = new promise 안해도 됨
+**  var 결과 = await 프로미스                                                         ----->코드를 쭉 내려가다가 await 프로미스를  프로미스가 해결될때 까지 기다려~~~ 기다린다.!!
+**  함수1().then(function(){})                                                       -----> 실제 사용
 ** 
+**   **try catch 구문**
+**     try{} catch {}
 ** 
-** 
-** 
-** 
-** 
-** 
-** 
-** 
+**
 *  TODO : apply 함수
 * ! var A = { hi : function(){ console.log("하이") } }
 * ! var B = { name : "오호" }
 * ! A.hi.apply(B)                        ---------------------> A객체 안의 함수 (hi)를 B안에서 실행시키는 함수 (함수.apply(실행 시킬 곳 객체 , 파라미터1, 파리미터2,...))
 * !
-* !
-* !
-* !
-* !
-* !
-* !
-* !
-* !
-* !
+* TODO : 자바스크립트의 내장 함수
+* ? 
+* ? for (var key in 오브젝트){
+* ?         <오브젝트의 키 값을 출력해주는 for문!>  // console.log(오브젝트[key])
+* ? }
+* ? 
+* ? //
+* ? for (var element of 어레이){
+* ?     console.log(element)
+* ? }
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
+* ? 
 * !
 * !
 * !
