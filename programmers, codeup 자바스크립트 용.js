@@ -31,6 +31,7 @@
 // 결과 : "자바"
 
 //숫자형---[...(배열+'')] 문자형--- 문자형.split('')
+//sqrt제곱근 판별
 //--------------------------------------------------------------------------------------------------------
 
 
@@ -413,3 +414,21 @@
 //     return answer
 // }
 // solution([1,2,3])
+
+// console.log("LV1 약수의 합")
+// function solution(n) {
+//     var arr = [];
+//     for(i=0;i<=n;i++){
+//         if(n%i == 0){
+//             arr.push(i)
+//         }
+//     }
+//    return arr.reduce((acc,cur) => acc + cur, 0)
+// }
+// solution(10)
+
+// console.log("Lv1 제곱근 판별")
+// function solution(n) {
+//     return Number.isInteger(Math.sqrt(n)) ? (Math.sqrt(n) + 1) ** 2 : -1;
+//   }
+

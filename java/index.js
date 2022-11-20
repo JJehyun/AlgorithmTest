@@ -30,6 +30,18 @@ function 함수2(x) {
     1 + 1;
 }
 /*
+* 타입 파라미터 number라는 타입이 $$$아무이름$$$에 다 들어간다. Generic함수
+*/
+function 함수파미터더(x) {
+    return x[0];
+}
+var 변수라네 = 함수파미터더([0, 1]);
+function 함수파미터더2(x) {
+    console.log("extends는 옆에 있는 number type를 포함하는지 체크해주는 역할을 해준다");
+    return x - 1;
+}
+var 아무 = 함수파미터더2(100);
+/*
 * Type Narrowing 애매한 type를 만나면 Narrowing 해야함 타입이 2개일 때 한개로 정하는 것 &&!!!!!
 */
 function 함수3(x) {
@@ -56,6 +68,13 @@ function 네로잉3(파라미터) {
     }
 }
 var 튜블타입사용 = [123, "스트링"];
+var 튜블스사용 = ["dog", null];
+function 튜블함수() {
+    var x = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        x[_i] = arguments[_i];
+    }
+}
 var john = { name: "이름", age: '123' };
 var 리드온리 = {
     name: "리드"
@@ -134,3 +153,4 @@ var Static = /** @class */ (function () {
     return Static;
 }());
 console.log(Static.x);
+var 아무거나 = "sss";

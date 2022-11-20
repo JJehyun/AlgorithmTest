@@ -16,6 +16,20 @@ function 함수2(x? : number) : void{
     1+1
 }
 /*
+* 타입 파라미터 number라는 타입이 $$$아무이름$$$에 다 들어간다. Generic함수
+*/
+function 함수파미터더<아무이름>(x : 아무이름[]) : 아무이름{        // number라는 타입이 아무이름에 다 들어간다.
+    return x[0]
+}
+let 변수라네 = 함수파미터더<number>([0,1])
+function 함수파미터더2<아무이름2 extends number>(x : 아무이름2){
+    console.log("extends는 옆에 있는 number type를 포함하는지 체크해주는 역할을 해준다")
+    return x -1
+}
+let 아무 = 함수파미터더2<number>(100)
+
+
+/*
 * Type Narrowing 애매한 type를 만나면 Narrowing 해야함 타입이 2개일 때 한개로 정하는 것 &&!!!!!
 */
 
@@ -52,6 +66,9 @@ function 네로잉3(파라미터:A1 | A2){
 */
 type 튜플타입 = [number,string]
 var 튜블타입사용 : 튜플타입 = [123,"스트링"]
+let 튜블스사용 : [string, null,boolean?] = ["dog", null]
+function 튜블함수(...x : [number , string]){}
+
 /*
 * 객체에서의 type 지정  글자로된 object속성타입은 string
 */
@@ -152,3 +169,13 @@ class Static {
     y =10;
 }
 console.log(Static.x)
+/*
+* namespace 관련 import , export
+*/
+namespace 아무이름 {
+    export type Name = string | null
+}
+let 아무거나 : 아무이름.Name = "sss"
+/*
+* 
+*/
