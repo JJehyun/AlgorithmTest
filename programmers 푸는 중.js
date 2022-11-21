@@ -98,3 +98,48 @@
 //         }
 //     }    
 // }
+
+// console.log("Lv1 두 정수 사이의 합")
+// function solution(a, b) {
+//     var answer = 0;
+//     if(a<=b){
+//     for(i=a; i<=b; i++){
+//         answer += i
+//             }
+//         }else{
+//     for(i=b; i<=a; i++){
+//         answer += i
+//             }
+//         }
+//     return answer;
+// }
+
+// console.log("Lv1 콜라츠의 추측")
+// function solution(num) {
+//     var answer = 0;
+//     while(answer <= 500){
+//         if(num === 1) return answer
+//         num = num % 2 == 0 ? num/2 : (num * 3) + 1
+//         answer++
+//     }
+//     return -1;
+// }
+
+// console.log("Lv1 서울에서 김서방 찾기")
+// function findKim(seoul){
+//     var idx = seoul.indexOf('Kim');
+//     return "김서방은 " + idx + "에 있다";
+//   }
+
+// console.log("핸드폰 번호 가리기")
+// function hide_numbers(s) {
+//     return s.replace(/\d(?=\d{4})/g, "*");
+//   }
+  
+// console.log("나누어 떨어지는 배열")
+// function solution(arr, divisor) {
+//     answer = arr.sort().filter(element => element%divisor === 0)
+//     answer.length === 0 ? answer.push(-1) : answer.sort((a,b)=> a-b)
+//     return answer;
+// }
+
