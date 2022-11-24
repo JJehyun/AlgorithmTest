@@ -228,3 +228,11 @@
 //     }
 //     return answer;
 // }
+
+// console.log(" Lv1 부족한 금액 계산하기")
+// function solution(price, money, count) {
+//     const tmp = price * count * (count + 1) / 2 - money;
+//     return tmp > 0 ? tmp : 0;
+// }
+
+console.log("행렬의 덧셈")
