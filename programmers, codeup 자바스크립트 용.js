@@ -394,7 +394,7 @@
 // }
 // solution(10)
 
-//console.log("369게임")
+//console.log("Lv1 369게임")
 // function solution(order) {
 //     var arr = [...('' + order)]
 //     var arr2 = arr.filter(element=> element === '3' || element === '6' || element === '9')
@@ -439,4 +439,5 @@
 // function solution(n) {
 //     return Number.isInteger(Math.sqrt(n)) ? (Math.sqrt(n) + 1) ** 2 : -1;
 //   }
+
 

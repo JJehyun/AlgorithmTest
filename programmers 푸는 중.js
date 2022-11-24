@@ -172,7 +172,7 @@
 // console.log("Lv1 배열 더하기")
 // function solution(s) {
 //     return s.length % 2 !== 0
-//       ? s[Math.floor(s.length / 2)]
+//        s[Math.floor(s.length / 2)]
 //       : s.slice(s.length / 2 - 1, s.length / 2 + 1);
 //   }
 
@@ -235,4 +235,55 @@
 //     return tmp > 0 ? tmp : 0;
 // }
 
-console.log("행렬의 덧셈")
+// console.log("Lv1 행렬의 덧셈")
+// function solution(arr1, arr2) {
+//     var answer = [[]];
+//     for (var i=0; i<arr1.length; i++){
+//         answer[i] =[];
+//         for(var j=0; j<arr1[i].length; j++){
+//             answer[i].push(arr1[i][j] + arr2[i][j]);
+//         }
+//     }
+//     return answer;
+// }
+
+// console.log("Lv1 최대공약수와 최소공배수")
+// function solution(n, m) {
+//     let first = 0;
+//     for(i=1; i<= Math.min(n,m);i++){
+//         if(n%i===0 && m%i===0){
+//             first = i
+//         }
+//     }
+//     return [first,four];
+// }
+
+// console.log("Lv1 이상한 문자 만들기")
+// function solution(s) {
+//     let answer = '';
+//     let words = s.split(' ');
+//     for (let i = 0; i < words.length; i++) {
+//         for(let j = 0; j < words[i].length; j++) {
+//             if(j % 2 === 0) {
+//                 answer += words[i][j].toUpperCase();
+//             } else {
+//                 answer += words[i][j].toLowerCase();
+//             }
+//         }
+//         if (i < words.length -1) {
+//             answer += ' ';
+//         }
+//     }
+//     return answer;
+// }
+
+// console.log("Lv1 같은 숫자는 싫어 큐/스택")
+// function solution(arr)
+// {
+//     var answer = [];
+//     for (let i = 0; i < arr.length; i++) {
+//       if(arr[i] !== arr[i+1]) answer.push(arr[i])
+//     }
+//     return answer;
+// }
+// return arr.filter((val,index) => val != arr[index+1]);
