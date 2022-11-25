@@ -287,3 +287,33 @@
 //     return answer;
 // }
 // return arr.filter((val,index) => val != arr[index+1]);
+
+// console.log("올바른 괄호 스택 문제");
+// function solution(array){
+//     const stack=[];
+//     for (const s of array){
+//         if(s === '('){
+//             stack.push('(');
+//         }else if(stack.length === 0){
+//             return false
+//         }
+//         else{
+//             stack.pop(')');
+//         }
+//     }
+//     return stack.length === 0
+// }
+// function solution(array){
+//     let count=[];
+//     for (const s of array){
+//         if(s === '('){
+//             count +=1
+//         }else if(count === 0){
+//             return false
+//         }
+//         else{
+//             count -= 1;
+//         }
+//     }
+//     return count === 0
+// }
