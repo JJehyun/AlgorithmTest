@@ -3,7 +3,15 @@
 let fs = require('fs');
 let input = fs.readFileSync('example.txt').toString().split('\n');
 let arr = input[1].split(' ').map(Number)
-sort((a,b)=>b-a)
+arr.sort((a,b)=>b-a)
+let i = 0;
+console.log(arr)
+let arr2 = [];
+while(true){
+    arr2.push(arr[i])
+    i++
+}
+
 //푸는 중
 // 1일
 // 4 ,
